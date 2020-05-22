@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Englebert", sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  letter-spacing: 0rem;
+  line-height: 2.5rem;
+  background-color: gray;
+  display: flex;
+}
+
+header {
+  border: 0.25em solid palegreen;
+  border-radius: 0.5em;
+  border-style: ridge;
+  text-align: center;
+  padding: 0.75em 0.75em;
+  margin: 0.5em;
+  background-color: lightgray;
+}
+
+img {
+  width: 100%;
+  padding: 0.35em;
+  object-fit: cover;
+}
+
+footer {
+  border: 0.25em solid palegreen;
+  border-style: ridge;
+  border-radius: 0.5em;
+  background-color: lightgray;
+}
+
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.pic-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.allpix {
+  width: 50%;
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+img:hover {
+  box-shadow: 0.75em 0.15em 0.5em 0 black;
+  border: 0.1em solid palegreen;
+  opacity: 40%;
+}
+
+/* Media queries for devices */
+
+@media screen and (min-width: 10px) {
+  .allpix {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 225px) {
+  .allpix {
+    width: 33%;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 549px) {
+  .allpix {
+    width: 25%;
+  }
+}
